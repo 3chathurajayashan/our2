@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <style>
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  float: left;
+  margin-left: 20px;
+}
+
+header nav {
+  float: right;
+  margin-right: 20px;
+}
+
+header nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Hero Section */
+.hero {
+  background: #005f73;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* About Section */
+.about {
+  background: white;
+  padding: 40px 0;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+    </style>
+  <header>
+    <div class="container">
+      <h1>My Website</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to My Website</h2>
+      <p>This is a simple HTML and CSS website.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am learning how to build websites using HTML and CSS. This is a basic example.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <p>© 2025 My Website | Contact: myemail@example.com</p>
+    </div>
+  </footer>
+</body>
+</html>
